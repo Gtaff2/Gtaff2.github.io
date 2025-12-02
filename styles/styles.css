@@ -1,0 +1,261 @@
+/* Styles have been adjuste to match desired website color most template code has been adjusted */
+/* Cleaned up for easy reading in Phase 2 */
+
+/* This sets the block display to some elements of the page */
+header, nav, main, footer { display: block; }
+
+/* This sets the background color and fonts to the bosy section */
+body { 
+	background-color: #8ED7D2;
+	font-family: Nunito, Poppins, sans-serif;
+	background-image: url(../images/background.png);
+	background-repeat: repeat;
+	background-size: 15%;
+}
+/* This is the ID tag name and information settings to be applied to the page when the tag link is added */
+#wrapper { 
+	width: 960px;
+    margin: auto;
+	background-color: #D7BA8C;
+	color: #1A1A1A;
+	box-shadow: 5px 5px 5px #000000;
+	text-align: center;
+	padding-bottom: 5px;
+	font-size: 20px;
+}
+/* Styled settings to be applied to h1 */ /* Will be changed most likely if not already applied */
+ h1 {
+	background-image: url(images/logo.png);
+    background-repeat: no-repeat;
+    background-color: #F7B8D3;
+	height: 110px;
+	font-family: Fredoka, Poppins, sans-serif;
+	font-size: 4.5em;
+	padding-top: 20px;
+	text-shadow: 3px 3px 3px #90745D;
+	margin-bottom: 0;
+	color: #FFFFFF; /* Text color was changed to white */
+}
+
+/* Style settings to be applied to nav */
+nav { 
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex; /*This fixed issues with my nav stacking partially*/
+}
+
+/* This is the Margins for the nav section */
+nav a { 
+	margin: 0 7px;	
+}
+
+/* Specific style settings to the nav ul */
+nav ul {
+	text-align: center;
+	list-style-type: none; 
+    padding-left: 20px;
+	font-size: 1.75em;
+	font-family: Nunito, Helvetica, sans-serif; /*Changed to desired font */
+}
+
+/* Specific style settings to the nav li */
+nav li {
+	padding-bottom: 5px;
+	font-weight: bold;
+}
+
+/* nav links style color settings */ /* I adjusted the nav to desired colors */
+nav a:link { color: #0000FF; }
+nav a:visited{ color: #800080; }
+nav a:hover { color: #FF4500; }
+
+/* Applies desired styles to the main */
+main {
+	background-color: #8ED7D2;
+	padding: 1px 20px 20px 20px;   
+	min-height: 300px;
+}
+
+/* Applies to the main img style settings */
+main img {
+	float: right;
+	padding: 20px;
+}
+
+/* Applies styles to the footer */
+footer {
+	background-color: #8FBF7B;
+    padding: 20px;
+    text-align: center;
+	font-size: small;
+	font-style: italic;
+}
+
+/* These settings will be applied to the different texts of the page */
+h2 {
+	margin-left: auto;
+}
+
+/* Paragraph settings */
+p {
+	font-family: Quicksand, Nunito, sans-serif;
+	text-align: left;
+}
+
+/* Area bellow is the neccessary code used to create a dropdown option for my room options. Content was found and heavily adjusted from W3Schools examples to match desired outcome for navigation layout*/
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 20px;
+  border: none;
+  color: #0000FF;
+  background-color: inherit;
+  font-family: inherit;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: relative; /* Helped to fix the Nav Layout issues */
+  background-color: #D7BA8C;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  padding: 5px;
+  display: block;
+  text-align: left;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Styles for unordered lists */
+ul {
+	display: block;
+	text-align: left;
+	margin: auto;
+	font-size: .75em;
+	font-family: inherit;
+}
+/* Settings for my images to bring them in witht the div element */
+#exterior {
+	height: 400px; 
+	width: 300px; 
+	background-image: url(../images/bnbexterior.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	float: right;
+	
+}
+#kitchen {
+	height: 250px; 
+	width: 300px; 
+	background-image: url(../images/kitchen.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	float: right;
+	margin-right: 10px;
+	
+}
+#commons {
+	height: 250px; 
+	width: 300px; 
+	background-image: url(../images/commonroom.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	float: right;
+	
+}
+#backyard {
+	height: 250px; 
+	width: 350px; 
+	background-image: url(../images/backyardpond.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	float: right;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	
+}
+#logo {
+	height: 100px; 
+	width: 100px; 
+	background-image: url(../images/bnblogo.png); 
+	background-repeat: no-repeat; 
+	background-size: 100% 100%; 
+	float: left;
+}
+#pinkieshideout {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/pinkieshideouti.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#midastouch {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/midastouch.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#coppersden {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/coppersden.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#starrynight {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/starrynight.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#reading {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/reading.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#basement {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/basement.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#gamenight {
+	height: 300px;
+	width: 400px;
+	background-image: url(../images/gamenight.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: right;
+	margin-top: 10px;
+}
+#sundae {
+	height: 150px;
+	width: 200px;
+	background-image: url(../images/sundae.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	float: left;
+	margin-top: 10px;
+}
