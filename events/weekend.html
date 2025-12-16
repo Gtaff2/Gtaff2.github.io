@@ -10,10 +10,12 @@
 	<header>
 		<h1>Stay-xolotl B&B</h1>
 	</header>
-	<nav> 	<!-- Starts the navigation section to place links to other pages and content in the site-->
+	<nav> 
+		<button class="hamburger" aria-label="Toggle menu">Menu</button> <!-- Button for Dropdown Navigation Menu-->
+            <div class="nav-desktop" id="navMenu"><!--Div Ids for desktop mode Navigation Menu-->
 			<!-- I removed some elements of template code to display the navigation horizontally-->
 			<!-- These are the links to the pages of my webpage-->
-		<a href="index.html">Home</a> 
+		<a href="../index.html">Home</a> 
 			<!-- This is the code to make the dropdown in the navigation css is coded with classes such as for a button and heavy decorative adjustments-->
 			<div class="dropdown">
 					<!-- This is the start of the button class to generate a dropdown button-->
@@ -33,11 +35,9 @@
   
 	</nav> <!-- Ends the link list for navigation section -->
 	<main>
-		<div id="gamenight" role="img" title="Shows a family playing a boardgame and having fun">
-		</div>
+		<img src="../images/gamenight.png" alt="Shows a family playing a boardgame and having fun"
+		class="responsive">
 		<h3>Weekend Events</h3>
-		
-		
 		
 		<p>We host a few events on the weekend for families and any guests who stay during or over the weekend(s). We also host planned or booked events such as parties and small conventions or even family reunions or get togethers.</p>
 		<h2>Most commonlyhosted events</h2>	
@@ -49,12 +49,33 @@
 				<li>Karaoke Night</li>
 			</ul>
 			
-			<div id="sundae" role="img" title="shows a table with assorted ice cream and ice cream toppings with a banner above that says Make your own sundae bar">
-			</div>
 			
-		<p>Events can be requested when booking or held the day of. (Not all events are able to be prepared last minute please try to plan accordningly)
+			<p>Events can be requested when booking or held the day of. (Not all events are able to be prepared last minute please try to plan accordningly)</p>
+			<h3>Events and lenght of notice</h3>
+			<table> 
+				<tr>
+					<th>Parties</th>
+					<td>Need to be reserved or requested at least One week prior to the date of event along with number of attendants.
+					<br><b>At Least One Week Notice</b></td>
+				</tr>
+				<tr>
+					<th>Build your own Sundae Bar</th>
+					<td>At least the night before along with list of potential allergens. To alot for supplies to be gathered and prepared.
+					<br><b>18-24hrs prior to 7pm Thursdays</b></td>
+				</tr>
+				<tr>
+					<th>Make your Own Pizza Day</th>
+					<td>One day prior along with list of potential allergens. To alot for supplies to be gathered and prepared.
+					<br><b>24hrs prior to 7pm Fridays</b></td>
+				</tr>
+				
+			</table>
+				<img src="../images/sundae.png" class="responsive" alt="shows a table with assorted ice cream and ice cream toppings with a banner above that says Make your own sundae bar">
+			
 	</main> <!-- Indicates the end of the main section -->
 	<footer> <!-- Indicates the start of footer section-->
+		<img src="../images/bnblogo.png" alt="Shows the logo of a happy axolotl"
+		height="50" width="50"> 
 		Copyright &copy; 2025<br> <!-- Adjusted copyright footer for per the assignment -->
 		<a href="mailto:g0557594@amarillo.college.com">Gavin Taff</a> <!-- Link to email adjusted per assignment-->
 	</footer> <!-- Indicated the end of the footer section-->

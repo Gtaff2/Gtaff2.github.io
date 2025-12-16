@@ -1,19 +1,37 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<title>Put the name of the business and contact form  here</title>
-	<meta charset="utf-8">
-		<link href="styles/styles.css" rel="stylesheet">
-	</head>
-	<body>
-		<div id="wrapper">
-	<header>
+<!DOCTYPE html><!--Recoding and cleaning during phase 4 mostly just removing clutter and making everything look clean.-->
+<html lang="en"><!--Indicating the HTML language-->
+	<head><!--Head section-->
+	<!--Meta tags-->
+		<title>Axolotl BNB Contact Page</title>
+		
+		<meta charset="utf-8">
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<meta name="description" content="Axolotl-themed bed & breakfast with pastel rooms, fresh breakfast, friendly axolotls, garden pond & hot tub. Perfect family or couples retreat!">
+		
+		<link href="styles/styles.css" rel="stylesheet"><!--Styles link-->
+		
+	</head><!--End Head-->
+	
+	<body><!--Body Section-->
+	
+		<div id="wrapper"><!--Wrapper Style Div-->
+		
+	<header><!--Header Section-->
+	
 		<h1>Stay-xolotl B&B</h1>
-	</header>
-	<nav> 	<!-- Starts the navigation section to place links to other pages and content in the site-->
+		
+	</header><!--End Header-->
+	
+	<nav> 
+		<button class="hamburger" aria-label="Toggle menu">Menu</button> <!-- Button for Dropdown Navigation Menu-->
+            <div class="nav-desktop" id="navMenu"><!--Div Ids for desktop mode Navigation Menu-->
 			<!-- I removed some elements of template code to display the navigation horizontally-->
 			<!-- These are the links to the pages of my webpage-->
+		
 		<a href="index.html">Home</a> 
+		
 			<!-- This is the code to make the dropdown in the navigation css is coded with classes such as for a button and heavy decorative adjustments-->
 			<div class="dropdown">
 					<!-- This is the start of the button class to generate a dropdown button-->
@@ -32,16 +50,67 @@
 		<a href="contact.html">Contact</a>
   
 	</nav> <!-- Ends the link list for navigation section -->
-	<main>
+	
+	<main><!--Start Main-->
+	
 		<h3>Contact form </h3>
-  
+  <h2>We'd Love to Hear From You!</h2>
+            <p>Fill out the form below and we'll get back to you as soon as possible. Whether you're ready to book or just have questions about our axolotl friends — we're excited to help!</p>
+
+            <form action="https://webdevbasics.net/scripts/demo.php" method="post">
+                <!-- Text input -->
+                <label for="fullName">Full Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+
+                <!-- Email input -->
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+				
+                <!-- Radio buttons – How did you hear about us? -->
+                <fieldset>
+                    <legend>How did you find Stay-xolotl B&B?</legend>
+                    <label><input type="radio" name="source" value="search"> Google/Search Engine</label><br>
+                    <label><input type="radio" name="source" value="social"> Social Media (Instagram, TikTok, etc.)</label><br>
+                    <label><input type="radio" name="source" value="friend"> Friend or Family</label><br>
+                    <label><input type="radio" name="source" value="other"> Other</label>
+                </fieldset>
+
+                <!-- Checkboxes – Interests -->
+                <fieldset>
+                    <legend>I'm interested in: (check all that apply)</legend>
+                    <label><input type="checkbox" name="interest" value="rooms"> Booking a Room</label><br>
+                    <label><input type="checkbox" name="interest" value="events"> Weekend Events</label><br>
+                    <label><input type="checkbox" name="interest" value="axolotls"> Learning More About Axolotls</label><br>
+                    <label><input type="checkbox" name="interest" value="diet"> Gluten-Free/Carb-Free Breakfast Options</label>
+                </fieldset>
+
+                <!-- Textarea (scrolling text box) -->
+                <label for="message">Your Message or Questions:</label>
+                <textarea id="message" name="message" rows="6" placeholder="Tell us about your stay, dates you're interested in, or just say hi to the axolotls!" required></textarea>
+				
+				<!-- Submit Form -->
+				<input type="submit" value="Submit">
+
+                <!-- Optional: cute axolotl logo in the form area -->
+                <div style="text-align: center; margin: 30px 0;">
+                    <img src="images/bnblogo.png" alt="Happy axolotl waving hello" class="footer-logo" style="width: 80px;">
+                    <p><em>Our axolotls can't wait to meet you!</em></p>
+                </div>
+            </form>
 		<div id="logo" role="img" title="Shows the logo of a happy axolotl">
 		</div>
 	</main> <!-- Indicates the end of the main section -->
+	
 	<footer> <!-- Indicates the start of footer section-->
+	
+		<img src="../images/bnblogo.png" alt="Shows the logo of a happy axolotl"
+		height="50" width="50"> 
 		Copyright &copy; 2025<br> <!-- Adjusted copyright footer for per the assignment -->
 		<a href="mailto:g0557594@amarillo.college.com">Gavin Taff</a> <!-- Link to email adjusted per assignment-->
+		
 	</footer> <!-- Indicated the end of the footer section-->
+	
 	</div> <!-- Ending /div tag-->
 	</body> <!-- Body section closer tag-->
+	
 </html> <!-- End of code tag -->

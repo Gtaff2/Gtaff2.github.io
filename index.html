@@ -1,90 +1,107 @@
-<!-- Using the starting template. I have modified the colors and some of the code to customize my priject. Some of the template code has not be altered-->
+<!DOCTYPE html> <!--Recoding and cleaning during phase 4 mostly just removing clutter and making everything look clean.-->
+<html lang="en"><!--Indicating the HTML language-->
+<head><!--Head section-->
+	<!--Meta tags-->
+    <meta charset="utf-8">
+	
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	
+    <meta name="description" content="Axolotl-themed bed & breakfast with pastel rooms, fresh breakfast, friendly axolotls, garden pond & hot tub. Perfect family or couples retreat!">
+	
+    <title>Stay-xolotl B&B</title>
+	
+    <link href="styles/styles.css" rel="stylesheet"><!--Styles link-->
+	
+</head><!--End Head-->
 
-<!DOCTYPE html> <!-- This declares that the code file is it hmtl and will run with html-->
-
-<html lang="en"> <!-- This sets the coding language to English-->
-
-	<head> <!-- Starts the head section-->
-
-		<title>Stay-xolotl B&B</title> <!-- This is the placeholder title until I come up with a better name or it may stay the same -->
-
-	<meta charset="utf-8"> <!-- Speciffies the character encoding-->
-
-	<link href="styles/styles.css" rel="stylesheet"> <!-- This links in the styles folder to input the CSS code into the page for cosmetics, colors, and images etc.-->
-
-	</head> <!-- Ends the head section-->
-
-	<body> <!-- Starts the body section-->
-
-		<div id="wrapper"> <!-- links the id tag called "Wrapper"--> <!-- also has starting div tag-->
-
-		<header> <!--Starts header section-->
-			<h1>Stay-xolotl B&B</h1>
-			<!-- Displays the name of the bnb on the top of the webpage site in h1 font and any applied css in styles-->
-		</header> <!--Ends header section-->
- 
-    <nav> <!-- Starts the navigation section to place links to other pages and content in the site-->
-		<!-- I removed some elements of template code to display the navigation horizontally-->
-		<!-- These are the links to the pages of my webpage-->
-	<a href="index.html">Home</a> 
-		<!-- This is the code to make the dropdown in the navigation css is coded with classes such as for a button and heavy decorative adjustments-->
-	<div class="dropdown">
+<body><!--Body Section-->
+    <div id="wrapper"><!--Wrapper Style Div-->
+	
+        <header><!--Header Section-->
 		
-			<!-- This is the start of the button class to generate a dropdown button-->
-		<button class="dropbtn">Accommodations	
-		</button>
-		<div class="dropdown-content"><!-- Indicates the content withint the dropdown-->
-			<a href="rooms/pinkieshideout.html">Pinkie's Hideout</a>
-			<a href="rooms/coppersden.html">Copper's Den</a>
-			<a href="rooms/midastouch.html">Midas' Touch</a>
-			<a href="rooms/starrynight.html">Starry Night</a>
-		</div>
-	</div>
-		
-		<!-- This is the end of the list that is in the dropdown of the Nav-->
-	<a href="rooms/reading.html">Reading Room</a>
-	<a href="rooms/basementactivity.html">Basement/Activity Center</a> 
-	<a href="events/weekend.html">Weekend Events</a> 
-	<a href="contact.html">Contact</a> 
-	</nav> <!-- Ends the navigation section-->
+            <h1>Stay-xolotl B&B</h1>
+			
+        </header><!--End Header-->
 
-	<main> <!-- Starts the main section of code where most of the content will be-->
-		<!-- Image code confiugred to the right side of the text -->
-		<div id="exterior" role="img" title="Shows a picture of the fornt of the house shwoing the logo on the top left and 5 windows">
-		</div>
-	 
-	<h2> For A Quiet And Fun-Filled Vacation! </h2><!-- Second header type (h2)-->
-	<!-- The <p> tag indicates a paragraph of information below the second header type (Main information)-->
-	<p>We offer a boutique axolotl-themed bed & breakfast — pastel comfort, hand-made breakfasts, and a peaceful garden.
-	</p> <!-- Indicates the end of the paragraph-->
-	<p> Our Bed and breakfast location is perfect for a quiet haven for axolotl or plain animal lovers, and for more outgoing guests, our location is close to tons of family fun locations like movie theaters and amusment parks just a short walk away! </p>
+        <nav><!-- Nav start-->
+            <button class="hamburger" aria-label="Toggle menu">Menu</button> <!-- Button for Dropdown Navigation Menu-->
+            <div class="nav-desktop" id="navMenu"><!--Div Ids for desktop mode Navigation Menu-->
+                <a href="index.html">Home</a>
 
-	<h2> Perfect For Large or Small Families </h2>
-	<p> We have several rooms available than can be rented out together or separate. Our breakfast is served daily and is made to order with fresh ingredients and made with care. Our food is offered in Gluten and Carb free options.</p>
-	<p> Our main common room has a tank full of our own Axolotl pals who are very friendly and love attention. </p>
-		<!-- Images are configured to display on the left and right above the text--> 
+                <div class="dropdown"><!--Dropdown class with Button for Navigation Menu of the Room Accomodations-->
+                    <button class="dropbtn" aria-label="Accommodations submenu">Accommodations</button>
+                    <div class="dropdown-content">
+                        <a href="rooms/pinkieshideout.html">Pinkie's Hideout</a>
+                        <a href="rooms/coppersden.html">Copper's Den</a>
+                        <a href="rooms/midastouch.html">Midas' Touch</a>
+                        <a href="rooms/starrynight.html">Starry Night</a>
+                    </div>
+                </div>
+
+                <a href="rooms/reading.html">Reading Room</a>
+                <a href="rooms/basementactivity.html">Basement/Activity Center</a>
+                <a href="events/weekend.html">Weekend Events</a>
+                <a href="contact.html">Contact</a>
+            </div><!--Closes Divs-->
+        </nav><!-- End Nav-->
+
+        <main><!--Start Main-->
+			<!--Image tag-->
+            <img src="images/bnbexterior.png"
+                 class="responsiveexterior"
+                 alt="Exterior of Stay-xolotl B&B, a cute house with the logo and five windows visible">
+
+            <h2>For A Quiet And Fun-Filled Vacation!</h2>
+			
+            <p>We offer a boutique axolotl-themed bed &amp; breakfast — pastel comfort, hand-made breakfasts, and a peaceful garden.</p>
+			
+            <p>Our bed and breakfast location is perfect for a quiet haven for axolotl or animal lovers, and for more outgoing guests, our location is close to tons of family fun like movie theaters and amusement parks just a short walk away!</p>
+
+            <h2>Perfect For Large or Small Families</h2>
+			
+            <p>We have several rooms available that can be rented together or separately. Breakfast is served daily and made to order with fresh ingredients. Gluten-free and low-carb options are always available.</p>
+			
+            <p>Our main common room has a large tank full of our own friendly axolotls who love attention!</p>
+
+            <h2>House Amenities</h2>
+			
+            <img src="images/commonroom.png"
+                 class="responsive"
+                 alt="Common room with couch, table, chairs and axolotl tank">
+
+            <p>We have plenty of amenities for any length of stay. Our common area has laundry machines, a fully equipped kitchen, and the basement features a workout area and hot tub.</p>
+
+            <img src="images/backyardpond.png"
+                 class="responsive"
+                 alt="Backyard pond full of axolotls with benches">
+            <br class="clear">
+
+            <h3>We have a beautiful garden for outdoor reading and leisure complete with a pond full of friendly axolotls</h3>
+			
+        </main><!--End Main-->
+
+        <footer><!--Start Footer-->
 		
-	<h2> House Amenities </h2>
-		<div id="commons" role="img" title="shows the common area with a couch, table with two chairs and an axolotl viewing tank">
-		</div>
-		<div id="kitchen" role="img" title="shows the kitchen with a sink, oven/stovetop, refridgerator, washing machine, and a two seated table">
-		</div>
-	<p> We have plenty of amenities for any kind of stay be it short or long. Our common area has laundry machines ready to use
-	our kitchen is fitted with any cooking or cleaning needs, and our basement has a workout area and hottub for any fitness or relaxation needs.
-	    <!-- Image configured to right side of the text-->
-		<br><br><br><br>
-		<div id="backyard" role="img" title="Backyard with a pond full of Axolotls and benches for reading.">
-		</div>
-	<h3> We have a beautiful garden for outdoor reading and leisure complete with an pond full of friendly Axolotls </h3>
-		<!-- Image code is configured to show at the bottom of the page next to the copyright -->
+            <img src="images/bnblogo.png" alt="Stay-xolotl happy axolotl logo" class="footer-logo"><!--Logo Image-->
+            <br class="clear">
+            Copyright &copy; 2025<br><!--Copyright-->
+            <a href="mailto:g0557594@amarillo.college.com">Gavin Taff</a><!--Email Link-->
+			
+        </footer><!--End Footer-->
 		
-	</main> <!-- Indicates the end of the main section -->
-	<footer> <!-- Indicates the start of footer section-->
-		<div id="logo" role="img" title="Shows the logo of a happy axolotl">
-		</div>
-		Copyright &copy; 2025<br> <!-- Adjusted copyright footer for per the assignment -->
-		<a href="mailto:g0557594@amarillo.college.com">Gavin Taff</a> <!-- Link to email adjusted per assignment-->
-	</footer> <!-- Indicated the end of the footer section-->
-	</div> <!-- Ending /div tag-->
-	</body> <!-- Body section closer tag-->
-</html> <!-- End of code tag -->
+    </div><!--End Div-->
+
+    <!-- Hamburger menu JavaScript -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.getElementById('navMenu');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
+	
+</body><!--End Body-->
+
+</html><!--Ends the Page HTML-->
