@@ -32,7 +32,7 @@
 		<a href="../rooms/basementactivity.html">Basement/Activity Center</a> 
 		<a href="weekend.html">Weekend Events</a> 
 		<a href="../contact.html">Contact</a>
-  
+			</div>
 	</nav> <!-- Ends the link list for navigation section -->
 	<main>
 		<img src="../images/gamenight.png" alt="Shows a family playing a boardgame and having fun"
@@ -80,5 +80,15 @@
 		<a href="mailto:g0557594@amarillo.college.com">Gavin Taff</a> <!-- Link to email adjusted per assignment-->
 	</footer> <!-- Indicated the end of the footer section-->
 	</div> <!-- Ending /div tag-->
+	 <!-- Hamburger menu JavaScript -->
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.getElementById('navMenu');
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+            });
+        }
+    </script>
 	</body> <!-- Body section closer tag-->
 </html> <!-- End of code tag -->
